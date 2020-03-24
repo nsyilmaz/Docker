@@ -1,0 +1,67 @@
+
+
+List container:
+docker container ls
+docker container ls -a
+docker ps
+docker ps -a
+
+
+Remove container:
+docker rm 4e71972a91dc
+
+Remove all stopped containers: 
+docker rm $(docker ps -a -q)
+
+docker rm `docker ps -a -q`
+
+docker container prune
+
+----------------------------------------
+List images:
+docker images
+
+docker images nsyilmaz/iovice
+
+
+Remove image:
+docker rmi a2e40a2d9cf8
+
+docker rmi `docker images -q`
+
+
+Exec command in container:
+docker exec -it 1c82b9d16b17  ls /tmp
+
+docker exec -it hede /bin/bash
+
+----------------------------------------
+
+Start from yaml:
+docker-compose up -d
+
+
+Stop from yaml:
+docker-compose down
+
+----------------------------------------
+
+Start from command:
+docker run -d --name hede nsyilmaz/iovice
+
+Stop from command:
+docker stop hede
+
+
+Remove conteiner from command:
+docker rm hede
+
+----------------------------------------
+Run and execute command and remove continer after exit:
+docker run --rm -it nsyilmaz/iovice ls
+
+
+
+
+
+
