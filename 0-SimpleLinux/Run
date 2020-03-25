@@ -1,0 +1,10 @@
+
+
+Build Image:
+# docker image build  -t simple-linux:latest .
+
+Run Container:
+# docker run --rm -ti -d --name hede simple-linux
+
+Attach Container:
+# docker attach hede
