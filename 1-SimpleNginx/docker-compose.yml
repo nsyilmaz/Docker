@@ -1,0 +1,12 @@
+
+version: '2.2'
+services:
+ web:
+    image: "simple-nginx"
+    container_name: "hede"
+    ports:
+    - "8080:80"
+
+    volumes:
+    - /home:/hede
+
