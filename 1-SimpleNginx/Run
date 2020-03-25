@@ -1,0 +1,12 @@
+
+
+Build Image:
+# docker image build  -t simple-nginx:latest .
+
+Run Container:
+# docker run --rm -ti -d -p 8080:80  --name hede simple-nginx
+# docker run --rm -ti -d -p 8080:80 -v /home:/hede --name hede simple-nginx
+
+Attach Container:
+# docker exec -it hede bash
+
