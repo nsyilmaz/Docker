@@ -61,7 +61,9 @@ Run and execute command and remove continer after exit:
 docker run --rm -it nsyilmaz/iovice ls
 
 
-
-
+----------------------------------------
+Copy files/folders between container and local fs:
+docker cp ubuntu:/etc/elasticsearch config
+docker cp ubuntu:/etc/elasticsearch config
 
 
