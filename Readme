@@ -62,6 +62,11 @@ docker run --rm -it nsyilmaz/iovice ls
 
 
 ----------------------------------------
+Run container with port and volume mapping:
+docker run --name nginx  -ti -d -p 8080:80 -v /local:/container  simple-nginx
+
+
+----------------------------------------
 Copy files/folders between container and local fs:
 docker cp ubuntu:/etc/elasticsearch config
 docker cp ubuntu:/etc/elasticsearch config
