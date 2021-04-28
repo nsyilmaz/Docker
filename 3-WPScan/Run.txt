@@ -1,0 +1,12 @@
+
+
+https://github.com/wpscanteam/wpscan
+
+
+docker run -it --rm wpscanteam/wpscan --url https://google.com
+docker run -it --rm wpscanteam/wpscan --url https://google.com --enumerate u1-100
+
+
+
+
+
